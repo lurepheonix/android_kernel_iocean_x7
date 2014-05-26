@@ -4,9 +4,9 @@ Actually the list of supported devices :
 	iOCEAN X7
 
 How to build:
-cd directory
+cd <directory>
 export ARCH=arm
-export CROSS_COMPILE=/home/<yuor name>/arm-eabi-4.8/bin/arm-eabi-
+export CROSS_COMPILE=/home/<your name>/arm-eabi-4.8/bin/arm-eabi-
 export PROJECT=vanzo89_wet_jb2
 make
 
