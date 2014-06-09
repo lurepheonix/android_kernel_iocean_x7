@@ -3,11 +3,15 @@ This is a kernel source for MT6589
 Actually the list of supported devices :
 	iOCEAN X7
 
+Supposing you`re building on Ubuntu 14.04 Trusty Tahr (which is the latest for now) and you have only the old 32bit machine like me.
+Dependencies:
+sudo apt-get install gcc-arm-none-eabi ncurses-dev
+This installs armeabi toolchain, which is already 4.8 for this Ubuntu version. 4.8 is needed.
+
 How to build:
 cd <directory>
 export ARCH=arm
-export CROSS_COMPILE=/home/<your name>/arm-eabi-4.8/bin/arm-eabi-
+export CROSS_COMPILE=arm-none-eabi-
 export PROJECT=vanzo89_wet_jb2
+make menuconfig (if you want to set up something)
 make
-
-You need arm-eabi-4.8 toolchain (you have to setup CROSS-COMPILE var like in build.sh)
